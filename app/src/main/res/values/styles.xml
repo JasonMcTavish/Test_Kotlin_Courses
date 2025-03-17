@@ -1,0 +1,34 @@
+<resources>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ToolbarTitleStyle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipStrokeWidth">0dp</item>
+    </style>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">#1F1F1F</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipMinHeight">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="chipCornerRadius">100dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+    </style>
+</resources>

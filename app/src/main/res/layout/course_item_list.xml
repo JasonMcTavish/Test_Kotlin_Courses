@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1F1F1F">
+
+        <ImageView
+            android:id="@+id/courseImage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#FF9500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_course"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/courseRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawablePadding="4dp"
+            android:text="4.9"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_star"
+            app:layout_constraintBottom_toBottomOf="@id/courseImage"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/courseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="22 Мая 2024"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/courseImage"
+            app:layout_constraintStart_toEndOf="@id/courseRating" />
+
+        <ToggleButton
+            android:id="@+id/bookmarkIcon"
+            android:layout_width="20dp"
+            android:layout_height="26dp"
+            android:layout_margin="16dp"
+            android:background="@null"
+            android:clickable="true"
+            android:drawableTop="@drawable/selector_bookmark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Java-разработчик с нуля"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseImage" />
+
+        <TextView
+            android:id="@+id/courseDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.8"
+            android:maxLines="2"
+            android:text="Освойте backend-разработку и программирование на Java, фреймворки..."
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseTitle" />
+
+        <TextView
+            android:id="@+id/coursePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="999 ₽"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseDescription" />
+
+        <TextView
+            android:id="@+id/detailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Подробнее →"
+            android:textColor="#2ECC71"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/coursePrice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView> 
