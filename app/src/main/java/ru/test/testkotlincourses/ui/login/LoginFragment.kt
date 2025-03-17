@@ -1,5 +1,7 @@
 package ru.test.testkotlincourses.ui.login
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -80,6 +82,14 @@ class LoginFragment : Fragment() {
     private fun setupNavigation() {
         binding.loginButton.setOnClickListener {
             findNavController().navigate(R.id.action_login_to_home)
+        }
+        binding.vkButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/"))
+            startActivity(intent)
+        }
+        binding.okButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ok.ru/"))
+            startActivity(intent)
         }
     }
 

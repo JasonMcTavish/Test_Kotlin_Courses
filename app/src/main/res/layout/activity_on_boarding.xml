@@ -9,7 +9,7 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Тысячи курсов\nв одном месте"
+        android:text="@string/courses_list"
         android:textColor="@android:color/white"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -53,20 +53,20 @@
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1С Администрирование" />
+                        android:text="@string/admin" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="RabbitMQ"
+                        android:text="@string/rabbitmq"
                         app:chipBackgroundColor="#2ECC71" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Трафик" />
+                        android:text="@string/traffic" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
 
@@ -87,19 +87,19 @@
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Контент маркетинг" />
+                        android:text="@string/marketing" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="B2B маркетинг" />
+                        android:text="@string/b2b" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Google аналитика" />
+                        android:text="@string/google_analytics" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
 
@@ -120,19 +120,19 @@
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="UX исследователь" />
+                        android:text="@string/ux" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Веб-аналитика" />
+                        android:text="@string/web_analytics" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Big Data"
+                        android:text="@string/big_data"
                         app:chipBackgroundColor="#2ECC71" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
@@ -154,25 +154,25 @@
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Геймдизайн" />
+                        android:text="@string/gamedev" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Веб-дизайн" />
+                        android:text="@string/web_design" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cinema 4D" />
+                        android:text="@string/cinema_4d" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Промт инженеринг" />
+                        android:text="@string/promt_inj" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
 
@@ -193,26 +193,26 @@
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Webflow" />
+                        android:text="@string/webflow" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Three.js"
+                        android:text="@string/three_js"
                         app:chipBackgroundColor="#2ECC71" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Парсинг" />
+                        android:text="@string/parce" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/CustomChipStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Python-разработчик" />
+                        android:text="@string/python" />
                 </LinearLayout>
 
             </com.google.android.material.chip.ChipGroup>
@@ -226,7 +226,7 @@
         android:layout_margin="16dp"
         android:backgroundTint="#2ECC71"
         android:padding="12dp"
-        android:text="Продолжить"
+        android:text="@string/continue_search"
         android:textAllCaps="false"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent" />

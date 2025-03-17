@@ -10,41 +10,47 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+    <string name="forget_pass">Забыл пароль</string>
+    <string name="registration">Регистрация</string>
+    <string name="no_acc">Нету аккаунта?</string>
+    <string name="login">Вход</string>
+    <string name="insert_pass">Введите пароль</string>
+    <string name="pass">Пароль</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="vk">VK</string>
+    <string name="ok">OK</string>
+    <string name="search_courses">Search courses...</string>
+    <string name="favorite">Избранное</string>
+    <string name="no_favorite_courses">Нет избранных курсов</string>
+    <string name="rating">4.9</string>
+    <string name="date">22 Мая 2024</string>
+    <string name="title">Java-разработчик с нуля</string>
+    <string name="author">Автор</string>
+    <string name="author_name">Merion Academy</string>
+    <string name="start_course">Начать курс</string>
+    <string name="move_to_platform">Перейти на платформу</string>
+    <string name="about_course">О курсе</string>
+    <string name="description">У вас будет 7 видеоуроков в высоком качестве. На них спикер объясняет теорию и показывает как выполнять практические задания. Доступ к материалам сохраняется на 2 года\n\nКроме теоретических материалов вас ждут тесты и практические задания, которые помогут лучше запомнить новую информацию</string>
+    <string name="account">Аккаунт</string>
+    <string name="admin">1С Администрирование</string>
+    <string name="rabbitmq">RabbitMQ</string>
+    <string name="traffic">Трафик</string>
+    <string name="marketing">Контент маркетинг</string>
+    <string name="b2b">B2B маркетинг</string>
+    <string name="google_analytics">Google аналитика</string>
+    <string name="ux">UX исследователь</string>
+    <string name="web_analytics">Веб-аналитика</string>
+    <string name="big_data">Big Data</string>
+    <string name="gamedev">Геймдизайн</string>
+    <string name="cinema_4d">Cinema 4D</string>
+    <string name="promt_inj">Промт инженеринг</string>
+    <string name="web_design">Веб-дизайн</string>
+    <string name="webflow">Webflow</string>
+    <string name="three_js">Three.js</string>
+    <string name="parce">Парсинг</string>
+    <string name="python">Python-разработчик</string>
+    <string name="continue_search">Продолжить</string>
+    <string name="courses_list">Тысячи курсов\nв одном месте</string>
+    <string name="on_increase_date">По возрастанию даты</string>
 </resources>
