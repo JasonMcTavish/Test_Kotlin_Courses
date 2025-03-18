@@ -58,24 +58,33 @@ class HomeFragment : Fragment() {
                 when (it) {
                     is StateLoading.Success -> {
                         binding.coursesRecyclerView.isVisible = true
+                        binding.sortText.isVisible = true
                         binding.progressBar.isVisible = false
                         binding.tryAgain.isVisible = false
                         viewModel.courses.observe(viewLifecycleOwner) { courses ->
                             Log.d("listCourses", "onCreateView: $courses")
-                            adapterCourse.submitList(courses)
+                            adapterCourse.submitList(courses) {
+                                binding.coursesRecyclerView.post {
+                                    binding.coursesRecyclerView.scrollToPosition(0)
+                                }
+                            }
+                            binding.coursesRecyclerView.scrollToPosition(0)
                             updateSortButtonText()
                         }
                     }
 
                     is StateLoading.Loading -> {
-                        binding.progressBar.isVisible = true
                         binding.coursesRecyclerView.isVisible = false
                         binding.tryAgain.isVisible = false
+                        binding.sortText.isVisible = false
+                        binding.progressBar.isVisible = true
+
                     }
 
                     else -> {
                         binding.progressBar.isVisible = false
                         binding.coursesRecyclerView.isVisible = false
+                        binding.sortText.isVisible = false
                         binding.tryAgain.isVisible = true
                     }
 

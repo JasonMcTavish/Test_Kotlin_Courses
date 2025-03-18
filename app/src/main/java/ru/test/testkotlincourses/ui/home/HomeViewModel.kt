@@ -45,12 +45,17 @@ class HomeViewModel @Inject constructor(
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 getDataFromApiUseCase()
-                val list = getAllCoursesUseCase()
-                _courses.postValue(list)
+                val list: List<CourseDomain> = getAllCoursesUseCase()
+                if (!list.isEmpty()) {
+                    _courses.postValue(list)
+                    _state.value = StateLoading.Success
+                } else {
+                    _state.value = StateLoading.Error("Ошибка загрузки")
+                }
             } catch (e: Exception) {
                 _state.value = StateLoading.Error(e.message.toString())
             }
-            _state.value = StateLoading.Success
+
 
         }
     }
