@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
-        setupSortButton()
+        setupButton()
     }
 
     private fun setupRecyclerView() {
@@ -58,6 +58,8 @@ class HomeFragment : Fragment() {
                 when (it) {
                     is StateLoading.Success -> {
                         binding.coursesRecyclerView.isVisible = true
+                        binding.progressBar.isVisible = false
+                        binding.tryAgain.isVisible = false
                         viewModel.courses.observe(viewLifecycleOwner) { courses ->
                             Log.d("listCourses", "onCreateView: $courses")
                             adapterCourse.submitList(courses)
@@ -66,11 +68,15 @@ class HomeFragment : Fragment() {
                     }
 
                     is StateLoading.Loading -> {
+                        binding.progressBar.isVisible = true
                         binding.coursesRecyclerView.isVisible = false
+                        binding.tryAgain.isVisible = false
                     }
 
                     else -> {
+                        binding.progressBar.isVisible = false
                         binding.coursesRecyclerView.isVisible = false
+                        binding.tryAgain.isVisible = true
                     }
 
                 }
@@ -78,11 +84,12 @@ class HomeFragment : Fragment() {
         }
     }
 
-    private fun setupSortButton() {
+    private fun setupButton() {
         binding.sortText.setOnClickListener {
             viewModel.toggleSortOrder()
             updateSortButtonText()
         }
+        binding.tryAgain.setOnClickListener { viewModel.getData() }
     }
 
     private fun updateSortButtonText() {

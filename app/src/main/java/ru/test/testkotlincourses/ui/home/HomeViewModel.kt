@@ -40,7 +40,7 @@ class HomeViewModel @Inject constructor(
         getData()
     }
 
-    private fun getData() {
+    fun getData() {
         _state.value = StateLoading.Loading
         viewModelScope.launch(Dispatchers.IO) {
             try {
