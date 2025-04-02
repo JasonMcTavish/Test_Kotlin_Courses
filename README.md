@@ -1,7 +1,6 @@
 Aleynikov A.V.
 @JasonMcTavish
 test project
-18.03.2025
 
 #ТЗ на разработку приложения для курсов
   ## Общая информация
